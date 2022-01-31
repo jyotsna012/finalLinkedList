@@ -5,7 +5,7 @@
  *Max Shi
  */
 
-#include "student.h"
+#include "Student.h"
 class Node
 {
   public:
