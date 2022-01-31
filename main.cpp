@@ -22,15 +22,19 @@ int main(){
   ss->setLName("aa");
   ss->setID(0);
   ss->setGPA(4);
-  head = ss;
+  Node* jj = new Node(ss);
   
   Student* sss = new Student();
   sss->setFName("b");
   sss->setLName("bb");
   sss->setID(1);
   sss->setGPA(4);
-  head -> setNext(sss);
+  Node* jjj = new Node(sss);
 
+  jj = head;
+  head -> setNext(jjj);
+  jjj ->setNext(NULL);
+  
   addStudent();
   addStudent();
   addStudent();
