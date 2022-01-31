@@ -17,7 +17,11 @@ void addStudent();
 
 int main(){
 
-
+  addStudent();
+  addStudent();
+  addStudent();
+  addStudent();
+  addStudent();
 }
 
 void addStudent(){
