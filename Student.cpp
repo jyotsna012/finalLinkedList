@@ -12,7 +12,7 @@ void Student::setFName(char* nName){
 
 void Student::setLName(char* nName){
   lastName = new char[20];
-  strcpy(lastName,newName);
+  strcpy(lastName,nName);
 }
 
 void Student::setID(int nID){
