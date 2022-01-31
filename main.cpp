@@ -52,8 +52,8 @@ void addStudent(){
     temp = temp -> getNext();
   }
   
-  n -> getNext() = temp -> getNext();
-  temp -> getNext() = n;
+  n -> setNext(temp -> getNext());
+  temp -> setNext(n);
   
 }
 
