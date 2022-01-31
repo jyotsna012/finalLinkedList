@@ -49,8 +49,8 @@ void addStudent(){
   s->setGPA(sgpa);
   
   Node* n = new Node(s);
- /* Node* temp = head;
-  int key = n -> getStudent()-> getID();
+  Node* temp = head;
+   /*int key = n -> getStudent()-> getID();
   
   while(temp -> getNext() != NULL && temp -> getNext() -> getStudent()-> getID() < key){
     temp = temp -> getNext();
