@@ -6,8 +6,8 @@
 
 using namespace std;
 
-node* head = NULL;
-node* prev = NULL;
+Node* head = NULL;
+Node* prev = NULL;
 
 int deleteID;
 float sum = 0;
@@ -44,17 +44,17 @@ void addStudent(){
   cin.get();
   s->setGPA(sgpa);
   
-  node* n = new node(s);
-  node* temp = new node();
+  Node* n = new Node(s);
+  Node* temp = new Node();
   temp = head;
   int key = n -> getID();
   
-  while(temp -> next != NULL && temp -> next -> getID() < key){
-    temp = temp -> next;
+  while(temp -> getNext() != NULL && temp -> getNext() -> getID() < key){
+    temp = temp -> getNext();
   }
   
-  n -> next = temp -> next;
-  temp -> next = n;
+  n -> next = temp -> getNext();
+  temp -> getNext() = n;
   
 }
 
