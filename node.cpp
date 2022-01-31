@@ -4,7 +4,7 @@
 Node::Node(Student* s)
 {
   student = s;
-  next = nullptr;
+  next = NULL;
 }
 
 Node::~Node()
