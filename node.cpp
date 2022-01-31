@@ -1,5 +1,5 @@
 #include "node.h"
-#include "student.h"
+#include "Student.h"
 
 Node::Node(Student* s)
 {
