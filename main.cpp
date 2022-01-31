@@ -50,9 +50,9 @@ void addStudent(){
   
   Node* n = new Node(s);
   Node* temp = head;
-   /*int key = n -> getStudent()-> getID();
+  int key = n -> getStudent()-> getID();
   
-  while(temp -> getNext() != NULL && temp -> getNext() -> getStudent()-> getID() < key){
+    /*while(temp -> getNext() != NULL && temp -> getNext() -> getStudent()-> getID() < key){
     temp = temp -> getNext();
   }
   
