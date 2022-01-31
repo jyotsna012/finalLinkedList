@@ -52,10 +52,10 @@ void addStudent(){
   Node* temp = head;
   int key = n -> getStudent()-> getID();
   
-    /*while(temp -> getNext() != NULL && temp -> getNext() -> getStudent()-> getID() < key){
+  while(temp -> getNext() != NULL && temp -> getNext() -> getStudent()-> getID() < key){
     temp = temp -> getNext();
   }
-  
+  /*
   n -> setNext(temp -> getNext());
   temp -> setNext(n);*/
   
