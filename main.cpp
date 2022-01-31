@@ -16,6 +16,20 @@ int num = 0;
 void addStudent();
 
 int main(){
+  
+  Student* ss = new Student();
+  ss->setFName("a");
+  ss->setLName("aa");
+  ss->setID(0);
+  ss->setGPA(4);
+  head = ss;
+  
+  Student* sss = new Student();
+  sss->setFName("b");
+  sss->setLName("bb");
+  sss->setID(1);
+  sss->setGPA(4);
+  head -> setNext(sss);
 
   addStudent();
   addStudent();
