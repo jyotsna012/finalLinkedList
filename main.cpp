@@ -76,7 +76,7 @@ while(true){
 		ADD(fN, lN, sI, G, head);
     }
     if(input == 2){
-	print(head);
+	PRINT(head);
     }
     if(input == 3){
       break;
