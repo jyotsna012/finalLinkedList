@@ -86,13 +86,13 @@ int main(){
 	
 }
 
-void ADD(char *firstN, char *lastN, int IID, float GP, Node* p){
-  Studenr* s = new Student();
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* p, Node* head){
+  Student* s = new Student();
   s->setFName(firstN);
   s->setLName(lastN);
   s->setID(IID);
   s->setGPA(GP);
-  node* n = new node(s);
+  Node* n = new Node(s);
   
   while(head -> getNext() != NULL){
 	head = head -> getNext();  
