@@ -55,15 +55,14 @@ int main(){
 
 
 void PRINT(Node* nextt) {
-	
-	cout << "hi";
-    /*if (nextt != NULL) {
+
+    if (nextt != NULL) {
         cout << "First Name: " << nextt->getStudent()->getFName() << endl;
         cout << "Last Name: " << nextt->getStudent()->getLName() << endl;
 	cout << " ID: " << nextt->getStudent()->getID() << endl;
         cout << " GPA: " << setprecision(2) << nextt->getStudent()->getGPA() << endl;
         PRINT(nextt->getNext());
-    }*/
+    }
 }
 
 
