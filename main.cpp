@@ -22,10 +22,10 @@ int main(){
 void PRINT(Node* next) {
     if (next != NULL) {
         next->getStudent();
-        cout << "First Name: " << getFName() << endl;
-        cout << "Last Name: " << getLName() << endl;
-	      cout << " ID: " << getID() << endl;
-        cout << " GPA: " << setprecision(2) << getGPA() << endl;
+        cout << "First Name: " << next->getStudent()->getFName() << endl;
+        cout << "Last Name: " << next->getStudent()->getLName() << endl;
+	cout << " ID: " << next->getStudent()->getID() << endl;
+        cout << " GPA: " << setprecision(2) << next->getStudent()->getGPA() << endl;
         PRINT(next->getNext()); 
     }
 }
