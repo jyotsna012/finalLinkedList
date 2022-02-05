@@ -12,13 +12,10 @@ void AVERAGE(Node* head, float currentSum, int nodeCount);
 void DELETE(Node*& head, Node* current, Node* prev, int ID);
 
 int main(){
-  
-  Student *one = new Student();
-  Student *two = new Student();
-  Student *three = new Student();
-  Node* head(one);
-  Node* next(two);
-  Node* next2(three);
+
+  Node* head(new Student());
+  Node* next(new Student());
+  Node* next2(new Student());
 
   head -> setNext(next);
   next -> setNext(next2);
