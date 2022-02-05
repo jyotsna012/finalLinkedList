@@ -97,6 +97,13 @@ void DELETE(Node* &head, Node* c, Node* p, int ID) {
     if (head == NULL) {
         return;
     }
+ 
+    if(c->getStudent()->getNext() == NULL && c->getStudent()->getID() != ID){
+	    
+	    cout<<"sorry, no student with matching id" << endl;
+	    
+    }
+	
     if (c->getStudent()->getID() == ID && p == NULL) {
             head = c->getNext();
 	    return;
