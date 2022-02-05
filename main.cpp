@@ -6,10 +6,8 @@
 
 using namespace std;
 
-void ADD(Node*& head, Node* prev, Student* student);
 void PRINT(Node* next);
-void AVERAGE(Node* head, float currentSum, int nodeCount);
-void DELETE(Node*& head, Node* current, Node* prev, int ID);
+int COUNT(Node* head);
 
 int main(){
 	
@@ -64,6 +62,16 @@ void PRINT(Node* nextt) {
         PRINT(nextt->getNext());
     }
 }
+
+int COUNT(Node* head){
+    int count = 0;
+    while(head != NULL){
+	count = count + 1;
+    	head = head -> getNext();
+    }	
+    return count;
+}
+
 
 
 
