@@ -50,7 +50,7 @@ int main(){
 	
   PRINT(head);
   cout << COUNT(head) << endl;
-  countt = COUNT(head);
+  int countt = COUNT(head);
   int summ;
   AVERAGE(head, countt, summ); 
 	
