@@ -51,12 +51,12 @@ int main(){
   next2->getStudent()->setGPA(5.985);
 	
 while(true){
-    char input[20];
+    int input;
     cout << "Type add, print, delete, average, or quit" << endl;
-    cin.get(input,20);
+    cin >> input;
     cin.get();
 	
-    if(input[1]=='d' || input[1]=='D'){
+    if(input == 1){
 		cout << "Please enter the student's first name" << endl;
   		char fN[20];
   		cin.get(fN,20);
@@ -75,19 +75,19 @@ while(true){
 	  	cin.get();
 		ADD(fN, lN, sI, G, head);
     }
-    if(input[1]=='v' || input[1]=='V'){
+    if(input == 2){
       break;
 
     }
-    if(input[0]=='p' || input[0]=='P'){
+    if(input == 3){
       break;
 
     }
-    if(input[0]=='d' || input[0]=='D'){
+    if(input == 4{
       break;
 
     }
-    if(input[0]=='q' || input[0]=='Q'){
+    if(input == 5){
       break;
     }
   }
