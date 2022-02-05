@@ -83,9 +83,9 @@ void AVERAGE(Node* head, int nCount, float sum) {
 	int temp = head -> getStudent() -> getGPA();
         sum = sum + temp;
         AVERAGE(head->getNext(), nCount, sum);
+        cout << "sum: " << sum << endl;
     }
     else {
-	cout << "sum: " << sum << endl;
         cout << "avg: " << sum/nCount << endl;
     }
 }
