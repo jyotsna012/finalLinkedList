@@ -17,9 +17,9 @@ class Student{
   void setLName(char*);
   char* getLName();
  
-  float GPA;
-  void setGPA(float);
-  float getGPA();
+  double GPA;
+  void setGPA(double);
+  double getGPA();
  
   int studentId;
   void setID(int);
