@@ -83,7 +83,7 @@ while(true){
       break;
 
     }
-    if(input == 4{
+    if(input == 4){
       break;
 
     }
