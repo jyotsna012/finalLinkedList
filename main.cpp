@@ -49,14 +49,15 @@ int main(){
   next2->getStudent()->setLName(name2);
   next2->getStudent()->setID(3);
   next2->getStudent()->setGPA(5.985);
-
-  while(true){
-  	cout << "What would you like to do? Type 1 for add, 2 for delete, 3 for average, and 4 for quit" << endl;
-	int input;
-	cin >> input;
-	  
-	if(input == 1){
-  		cout << "Please enter the student's first name" << endl;
+	
+while(true){
+    char input[20];
+    cout << "Type add, print, delete, average, or quit" << endl;
+    cin.get(input,20);
+    cin.get();
+	
+    if(input[1]=='d' || input[1]=='D'){
+		cout << "Please enter the student's first name" << endl;
   		char fN[20];
   		cin.get(fN,20);
   		cin.get();
@@ -73,18 +74,24 @@ int main(){
  		cin >> G;
 	  	cin.get();
 		ADD(fN, lN, sI, G, head);
+    }
+    if(input[1]=='v' || input[1]=='V'){
+      break;
 
-	}
-	else if(input == 2){
-		break;
-	}
-	else if(input == 3){
-		break;
-	}
-	else if(input == 4){
-		break;
-	}
+    }
+    if(input[0]=='p' || input[0]=='P'){
+      break;
+
+    }
+    if(input[0]=='d' || input[0]=='D'){
+      break;
+
+    }
+    if(input[0]=='q' || input[0]=='Q'){
+      break;
+    }
   }
+  return 0;  	
 	
 }
 
