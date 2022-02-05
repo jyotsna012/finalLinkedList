@@ -80,13 +80,13 @@ int COUNT(Node* head){
 
 void AVERAGE(Node* head, int nCount, double sum) {
 	if (head != NULL) {
-	int temp = head -> getStudent() -> getGPA();
+	double temp = head -> getStudent() -> getGPA();
         sum = sum + temp;
         AVERAGE(head->getNext(), nCount, sum);
         cout << "sum: " << sum << endl;
     }
     else {
-        cout << "avg: " << (float)(sum/nCount) << endl;
+        cout << "avg: " << (double)(sum/nCount) << endl;
     }
 }
 
