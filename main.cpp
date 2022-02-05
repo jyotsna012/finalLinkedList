@@ -9,6 +9,8 @@ using namespace std;
 void PRINT(Node* next);
 int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
+void DELETE(Node* &head, Node* c, Node* p, int ID);
+
 
 int main(){
 	
@@ -90,5 +92,22 @@ void AVERAGE(Node* head, int nCount, double sum) {
     }
 }
 
+void DELETE(Node* &head, Node* c, Node* p, int ID) {
+    if (head == NULL) {
+        return;
+    }
+    if (c->getStudent()->getID() == ID && p == NULL) {
+            head = c->getNext();
+	    return;
+    }else if(c->getStudent()->getID() == ID) {
+	    Node* temp = c->getNext()
+            p->setNext(temp);
+       	    delete c;
+            return;
+    }
+    if (c->getNext() != NULL) {
+        DELETE(head, c->getNext(), c, ID);
+    }
+}
 
 
