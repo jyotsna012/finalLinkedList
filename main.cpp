@@ -10,7 +10,7 @@ void PRINT(Node* next);
 int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
 void DELETE(Node* &head, Node* c, Node* p, int ID);
-
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* head);
 
 int main(){
 	
@@ -49,15 +49,57 @@ int main(){
   next2->getStudent()->setLName(name2);
   next2->getStudent()->setID(3);
   next2->getStudent()->setGPA(5.985);
+
+  while(true){
+  	cout << "What would you like to do? Type 1 for add, 2 for delete, 3 for average, and 4 for quit" << endl;
+	int input;
+	cin >> input;
+	  
+	if(input == 1){
+  		cout << "Please enter the student's first name" << endl;
+  		char fN[20];
+  		cin.get(fN,20);
+  		cin.get();
+		cout << "Please enter the student's last name" << endl;
+  		char lN[20];
+  		cin.get(lN,20);
+  		cin.get();
+		cout << "Please enter the students id number" << endl;
+  		int sI;
+  		cin >> sI;
+  		cin.get();
+		cout << "Please enter the student's GPA" << endl;
+  		float G;
+ 		cin >> G;
+	  	cin.get();
+	}
+	if(input == 2){
 	
-  PRINT(head);
-  cout << COUNT(head) << endl;
-  int countt = COUNT(head);
-  double summ = 0.00;
-  AVERAGE(head, countt, summ); 
-  DELETE(head, head, NULL, 56);
-  PRINT(head);
+	}
+	if(input == 3){
 	
+	}
+	if(input == 4){
+		break;
+	}
+  }
+	
+}
+
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* p){
+  Studenr* s = new Student();
+  s->setFName(firstN);
+  s->setLName(lastN);
+  s->setID(IID);
+  s->setGPA(GP);
+  node* n = new node(s);
+  
+  while(head -> getNext() != NULL){
+	head = head -> getNext();  
+  }
+
+  head -> setNext(n);
+  n->setNext(NULL);	
 }
 
 
@@ -117,5 +159,6 @@ void DELETE(Node* &head, Node* c, Node* p, int ID) {
         DELETE(head, c->getNext(), c, ID);
     }
 }
+
 
 
