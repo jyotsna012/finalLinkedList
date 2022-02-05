@@ -56,6 +56,8 @@ int main(){
   double summ = 0.00;
   AVERAGE(head, countt, summ); 
   DELETE(head, head, NULL, 2);
+  PRINT(head);
+	
 }
 
 
