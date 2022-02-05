@@ -86,7 +86,7 @@ void AVERAGE(Node* head, int nCount, double sum) {
         cout << "sum: " << sum << endl;
     }
     else {
-        cout << "avg: " << sum/nCount << endl;
+        cout << "avg: " << (float)(sum/nCount) << endl;
     }
 }
 
