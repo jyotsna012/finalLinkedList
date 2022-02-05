@@ -75,13 +75,13 @@ int main(){
 		ADD(fN, lN, sI, G, head);
 
 	}
-	if(input == 2){
-	
+	else if(input == 2){
+		break;
 	}
-	if(input == 3){
-	
+	else if(input == 3){
+		break;
 	}
-	if(input == 4){
+	else if(input == 4){
 		break;
 	}
   }
