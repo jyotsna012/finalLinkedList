@@ -8,7 +8,7 @@ using namespace std;
 
 void PRINT(Node* next);
 int COUNT(Node* head);
-void AVERAGE(Node* head, int nCount, int sum); 
+void AVERAGE(Node* head, int nCount, float sum); 
 
 int main(){
 	
@@ -51,7 +51,7 @@ int main(){
   PRINT(head);
   cout << COUNT(head) << endl;
   int countt = COUNT(head);
-  int summ = 0;
+  float summ = 0;
   AVERAGE(head, countt, summ); 
 	
 
