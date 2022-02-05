@@ -79,12 +79,15 @@ while(true){
 	PRINT(head);
     }
     if(input == 3){
-      break;
+	int IIDD;
+	cout << "enter the id of student to delete" << endl;
+	cin >> IIDD;
+	DELETE(head, head, NULL, IIDD);
 
     }
     if(input == 4){
-      break;
-
+	int numNodes = COUNT(head);
+	AVERAGE(head, numNodes, 0); 
     }
     if(input == 5){
       break;
