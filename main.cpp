@@ -72,6 +72,8 @@ int main(){
   		float G;
  		cin >> G;
 	  	cin.get();
+		ADD(fN, lN, sI, G, head);
+
 	}
 	if(input == 2){
 	
