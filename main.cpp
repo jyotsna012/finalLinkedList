@@ -55,7 +55,7 @@ int main(){
   int countt = COUNT(head);
   double summ = 0.00;
   AVERAGE(head, countt, summ); 
-  DELETE(head, head, NULL, 1);
+  DELETE(head, head, NULL, 3);
   PRINT(head);
 	
 }
