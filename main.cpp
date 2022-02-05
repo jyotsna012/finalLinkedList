@@ -52,9 +52,9 @@ int main(){
 void PRINT(Node* next) {
     if (next != NULL) {
         cout << "First Name: " << next->getStudent()->getFName() << endl;
-        cout << "Last Name: " << next->getStudent()->getLName() << endl;
+        /*cout << "Last Name: " << next->getStudent()->getLName() << endl;
 	cout << " ID: " << next->getStudent()->getID() << endl;
-        cout << " GPA: " << setprecision(2) << next->getStudent()->getGPA() << endl;
+        cout << " GPA: " << setprecision(2) << next->getStudent()->getGPA() << endl;*/
         PRINT(next->getNext()); 
     }
 }
