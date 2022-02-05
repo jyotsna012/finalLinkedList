@@ -19,7 +19,7 @@ void Student::setID(int nID){
   studentId = nID;
 }
 
-void Student::setGPA(float newGPA){
+void Student::setGPA(double newGPA){
   GPA = newGPA;
 }
 
@@ -35,7 +35,7 @@ int Student::getID(){
   return studentId;
 }
 
-float Student::getGPA(){
+double Student::getGPA(){
   return GPA;
 }
 
