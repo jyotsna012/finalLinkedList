@@ -78,7 +78,7 @@ int COUNT(Node* head){
     return count;
 }
 
-void AVERAGE(Node* head, int nCount, int sum) {
+void AVERAGE(Node* head, int nCount, float sum) {
 	if (head != NULL) {
 	int temp = head -> getStudent() -> getGPA();
         sum = sum + temp;
