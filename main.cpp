@@ -8,6 +8,7 @@ using namespace std;
 
 void PRINT(Node* next);
 int COUNT(Node* head);
+void AVERAGE(Node* head, int nCount, int sum); 
 
 int main(){
 	
@@ -49,6 +50,10 @@ int main(){
 	
   PRINT(head);
   cout << COUNT(head) << endl;
+  count = COUNT(head);
+  int summ;
+  AVERAGE(head, count, summ); 
+	
 
 }
 
@@ -73,6 +78,17 @@ int COUNT(Node* head){
     return count;
 }
 
+void AVERAGE(Node* head, int nCount, int sum) {
+    sum = 0;
+    if (head != NULL) {
+	int temp = head -> getStudent() -> getGPA();
+        sum = sum + temp;
+        AVERAGE(head->getNext(), nCount, sum);
+    }
+    else {
+        cout << sum/nCount << endl;
+    }
+}
 
 
 
