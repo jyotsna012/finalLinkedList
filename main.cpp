@@ -52,7 +52,7 @@ int main(){
 	
 while(true){
     int input;
-    cout << "Type add, print, delete, average, or quit" << endl;
+    cout << "Type 1 for add, 2 for print, 3 for delete, 4 for average, or 5 for quit" << endl;
     cin >> input;
     cin.get();
 	
@@ -76,8 +76,7 @@ while(true){
 		ADD(fN, lN, sI, G, head);
     }
     if(input == 2){
-      break;
-
+	print(head);
     }
     if(input == 3){
       break;
