@@ -99,7 +99,7 @@ void DELETE(Node* &head, Node* c, Node* p, int ID) {
             head = c->getNext();
 	    return;
     }else if(c->getStudent()->getID() == ID) {
-	    Node* temp = c->getNext()
+	    Node* temp = c->getNext();
             p->setNext(temp);
        	    delete c;
             return;
