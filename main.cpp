@@ -11,6 +11,8 @@ int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
 void DELETE(Node* &head, Node* c, Node* p, int ID);
 void ADD(char *firstN, char *lastN, int IID, float GP, Node* head);
+void SORT(node* &tS, node* &cN);
+
 
 int main(){
 	
@@ -33,21 +35,21 @@ int main(){
   strcpy(name2,"tera");
   head->getStudent()->setFName(name);
   head->getStudent()->setLName(name2);
-  head->getStudent()->setID(1);
+  head->getStudent()->setID(4);
   head->getStudent()->setGPA(3.984);
 
   strcpy(name,"josie2");
   strcpy(name2,"tera2");
   next->getStudent()->setFName(name);
   next->getStudent()->setLName(name2);
-  next->getStudent()->setID(2);
+  next->getStudent()->setID(7);
   next->getStudent()->setGPA(4.985);
 	
   strcpy(name,"josie3");
   strcpy(name2,"tera3");
   next2->getStudent()->setFName(name);
   next2->getStudent()->setLName(name2);
-  next2->getStudent()->setID(3);
+  next2->getStudent()->setID(10);
   next2->getStudent()->setGPA(5.985);
 	
 while(true){
@@ -104,14 +106,40 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
   s->setID(IID);
   s->setGPA(GP);
   Node* n = new Node(s);
+  SORT(n, head);
   
-  while(head -> getNext() != NULL){
+ /* while(head -> getNext() != NULL){
 	head = head -> getNext();  
   }
 
   head -> setNext(n);
-  n->setNext(NULL);	
+  n->setNext(NULL);	*/
 }
+
+void SORT(node* &tS, node* &cN){
+  if(head==NULL){
+    head = tS;
+    return;
+  }
+  if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID() && head==cN){
+      tS->setNext(cN);
+      head = tS;
+      return;
+  }else if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID()){
+    previous->setNext(tS);
+    tS->setNext(cN);
+    return;
+  }
+  else{
+    previous = cN;
+    Node* nextNode = cN->getNext();
+	  if(cN->getNext()==NULL){
+		cN->setNext(tS);  
+	  }
+    sort(tS,nextNode);
+  }
+}
+
 
 
 void PRINT(Node* nextt) {
