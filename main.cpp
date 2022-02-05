@@ -21,9 +21,9 @@ int main(){
   next -> setNext(next2);
   next2 -> setNext(NULL);
 
-  name = char [20];
+  char name [20];
   strcpy(name,"josie");
-  name2 = char [20];
+  char name2 [20];
   strcpy(name2,"tera");
   head->getStudent()->setFName(name);
   head->getStudent()->setLName(name2);
