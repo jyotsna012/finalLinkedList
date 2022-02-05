@@ -48,6 +48,7 @@ int main(){
   next2->getStudent()->setGPA(5.985);
 	
   PRINT(head);
+  cout << COUNT(head) << endl;
 
 }
 
