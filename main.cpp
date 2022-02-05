@@ -55,8 +55,7 @@ int main(){
   int countt = COUNT(head);
   double summ = 0.00;
   AVERAGE(head, countt, summ); 
-	
-
+  DELETE(head, head, NULL, 2);
 }
 
 
@@ -85,7 +84,7 @@ void AVERAGE(Node* head, int nCount, double sum) {
 	double temp = head -> getStudent() -> getGPA();
         sum = sum + temp;
         AVERAGE(head->getNext(), nCount, sum);
-        cout << "sum: " << sum << endl;
+        //cout << "sum: " << sum << endl;
     }
     else {
         cout << "avg: " << (double)(sum/nCount) << endl;
