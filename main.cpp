@@ -20,21 +20,29 @@ int main(){
   head -> setNext(next);
   next -> setNext(next2);
   next2 -> setNext(NULL);
-	
-  head->getStudent()->setFName("Josie");
-  head->getStudent()->setLName("Tera");
-  head->getStudent()->setID("405456");
-  head->getStudent()->setGPA("4.987");
 
-  next->getStudent()->setFName("Josie1");
-  next->getStudent()->setLName("Tera1");
-  next->getStudent()->setID("4054561");
-  next->getStudent()->setGPA("4.9871");
+  name = char [20];
+  strcpy(name,"josie");
+  name2 = char [20];
+  strcpy(name2,"tera");
+  head->getStudent()->setFName(name);
+  head->getStudent()->setLName(name2);
+  head->getStudent()->setID(1);
+  head->getStudent()->setGPA(3.984);
+
+  strcpy(name,"josie2");
+  strcpy(name2,"tera2");
+  next->getStudent()->setFName(name);
+  next->getStudent()->setLName(name2);
+  next->getStudent()->setID(2);
+  next->getStudent()->setGPA(4.985);
 	
-  next2->getStudent()->setFName("Josie12");
-  next2->getStudent()->setLName("Tera12");
-  next2->getStudent()->setID("40545612");
-  next2->getStudent()->setGPA("4.98712");
+  strcpy(name,"josie3");
+  strcpy(name2,"tera3");
+  next2->getStudent()->setFName(name);
+  next2->getStudent()->setLName(name2);
+  next2->getStudent()->setID(3);
+  next2->getStudent()->setGPA(5.985);
 	
   PRINT(head);
 
