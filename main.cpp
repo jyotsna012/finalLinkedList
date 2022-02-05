@@ -21,7 +21,7 @@ int main(){
 
 void PRINT(Node* next) {
     if (next != NULL) {
-        next->getStudent()
+        next->getStudent();
         cout << "First Name: " << getFName() << endl;
         cout << "Last Name: " << getLName() << endl;
 	      cout << " ID: " << getID() << endl;
