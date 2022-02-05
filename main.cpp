@@ -88,7 +88,7 @@ int main(){
 	
 }
 
-void ADD(char *firstN, char *lastN, int IID, float GP, Node* p, Node* head){
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
   Student* s = new Student();
   s->setFName(firstN);
   s->setLName(lastN);
