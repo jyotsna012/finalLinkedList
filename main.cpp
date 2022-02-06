@@ -11,7 +11,7 @@ int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
 void DELETE(Node* &head, Node* c, Node* p, int ID);
 void ADD(char *firstN, char *lastN, int IID, float GP, Node* head);
-void SORT(node* &tS, node* &cN);
+void SORT(Node* &tS, Node* &cN);
 
 
 int main(){
@@ -125,7 +125,7 @@ void SORT(node* &tS, node* &cN){
       tS->setNext(cN);
       head = tS;
       return;
-  }else if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID()){
+  }else if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID() && head != cN){
     previous->setNext(tS);
     tS->setNext(cN);
     return;
@@ -134,7 +134,8 @@ void SORT(node* &tS, node* &cN){
     previous = cN;
     Node* nextNode = cN->getNext();
 	  if(cN->getNext()==NULL){
-		cN->setNext(tS);  
+		cN->setNext(tS); 
+		return;
 	  }
     sort(tS,nextNode);
   }
