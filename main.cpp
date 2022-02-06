@@ -120,11 +120,11 @@ void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
     head = tS;
     return;
   }
-  if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID() && head==cN){
+  if(tS->getStudent()->getSID() < cN->getStudent()->getSID() && head==cN){
       tS->setNext(cN);
       head = tS;
       return;
-  }else if(tS->getstudent()->getStudentID() < cN->getstudent()->getStudentID() && head != cN){
+  }else if(tS->getStudent()->getSID() < cN->getStudent()->getSID() && head != cN){
     previous->setNext(tS);
     tS->setNext(cN);
     return;
