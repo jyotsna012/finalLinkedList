@@ -143,7 +143,7 @@ void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
       cout<<"its working move"<<endl;
     previous = cN;
     Node* nextNode = cN->getNext();
-    SORT(tS,nextNode, head);
+    SORT(tS,nextNode, head, previous);
 }
 }
 
