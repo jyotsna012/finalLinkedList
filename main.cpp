@@ -10,7 +10,7 @@ void PRINT(Node* next);
 int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
 void DELETE(Node* &head, Node* c, Node* p, int ID);
-void ADD(char *firstN, char *lastN, int IID, float GP, Node* head);
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* &head);
 void SORT(Node* &tS, Node* &cN, Node* head);
 
 
