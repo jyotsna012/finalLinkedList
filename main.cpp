@@ -110,6 +110,7 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
 }
 
 void SORT(Node* &tS, Node* &cN, Node* head){
+      cout<<"its working aa"<<endl;
   Node* previous = NULL;
 
   if(head==NULL){
