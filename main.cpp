@@ -128,18 +128,18 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
       return;
   }
   
-  if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
+  /*if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
     previous->setNext(tS);
     tS->setNext(cN);
     return;
-  }
+  }*/
 
  if(cN->getNext()==NULL){
 	cN->setNext(tS); 
 	return;
    }
 	
-  else{
+  /*else{
     previous = cN;
     nextNode = cN->getNext();
     sort(tS,nextNode, head);*/
