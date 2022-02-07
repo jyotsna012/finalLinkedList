@@ -99,7 +99,7 @@ while(true){
 	
 }
 
-void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
+void ADD(char *firstN, char *lastN, int IID, float GP, Node* &head){
 
   Student* s = new Student();
   s->setFName(firstN);
