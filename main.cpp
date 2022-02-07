@@ -128,6 +128,7 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
   }
   
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
+      cout<<"its working aaggggdfff"<<endl;
     previous->setNext(tS);
     tS->setNext(cN);
     return;
@@ -139,6 +140,7 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
    }
 	
   else{
+      cout<<"its working move"<<endl;
     previous = cN;
     Node* nextNode = cN->getNext();
     SORT(tS,nextNode, head);
