@@ -100,6 +100,10 @@ while(true){
 }
 
 void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
+  if(head==NULL){
+      cout<<"its working aalolnull"<<endl;
+
+  }
   Student* s = new Student();
   s->setFName(firstN);
   s->setLName(lastN);
@@ -110,6 +114,7 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
 }
 
 void SORT(Node* &tS, Node* &cN, Node* head){
+	
       cout<<"its working aa"<<endl;
   Node* previous = NULL;
 
