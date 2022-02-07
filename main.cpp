@@ -107,12 +107,6 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
   s->setGPA(GP);
   Node* n = new Node(s);
   SORT(n, head, head);  
- /* while(head -> getNext() != NULL){
-	head = head -> getNext();  
-  }
-
-  head -> setNext(n);
-  n->setNext(NULL);	*/
 }
 
 void SORT(Node* &tS, Node* &cN, Node* head){
@@ -122,7 +116,7 @@ void SORT(Node* &tS, Node* &cN, Node* head){
     head = tS;
     return;
   }
-  if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
+  /*if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
       head = tS;
       return;
@@ -139,7 +133,7 @@ void SORT(Node* &tS, Node* &cN, Node* head){
 		return;
 	  }
     sort(tS,nextNode, head);
-  }
+  }*/
 }
 
 
