@@ -144,7 +144,7 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
     nextNode = cN->getNext();
     SORT(tS,nextNode, head);
 }
-
+}
 
 
 void PRINT(Node* nextt) {
