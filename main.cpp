@@ -120,7 +120,6 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
 	
   cout<<"its working aa"<<endl;
   Node* previous = NULL;
-  Node* nextNode = NULL;
 
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
@@ -141,7 +140,7 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
 	
   else{
     previous = cN;
-    nextNode = cN->getNext();
+    Node* nextNode = cN->getNext();
     SORT(tS,nextNode, head);
 }
 }
