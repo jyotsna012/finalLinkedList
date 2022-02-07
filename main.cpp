@@ -11,7 +11,7 @@ int COUNT(Node* head);
 void AVERAGE(Node* head, int nCount, double sum); 
 void DELETE(Node* &head, Node* c, Node* p, int ID);
 void ADD(char *firstN, char *lastN, int IID, float GP, Node* &head);
-void SORT(Node* &tS, Node* &cN, Node* &head);
+void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous);
 
 
 int main(){
@@ -113,13 +113,13 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* &head){
     return;
 
   }
-  SORT(n, head, head);  
+  Node* previous = NULL;
+  SORT(n, head, head, previous);  
 }
 
-void SORT(Node* &tS, Node* &cN, Node* &head){
+void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
 	
   cout<<"its working aa"<<endl;
-  Node* previous = NULL;
 
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
