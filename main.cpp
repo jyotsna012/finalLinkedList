@@ -100,16 +100,20 @@ while(true){
 }
 
 void ADD(char *firstN, char *lastN, int IID, float GP, Node* head){
-  if(head==NULL){
-      cout<<"its working aalolnull"<<endl;
 
-  }
   Student* s = new Student();
   s->setFName(firstN);
   s->setLName(lastN);
   s->setID(IID);
   s->setGPA(GP);
   Node* n = new Node(s);
+	
+  if(head==NULL){
+    head = n;
+    cout<<"its working yess"<<endl;
+    return;
+
+  }
   SORT(n, head, head);  
 }
 
@@ -118,11 +122,6 @@ void SORT(Node* &tS, Node* &cN, Node* head){
       cout<<"its working aa"<<endl;
   Node* previous = NULL;
 
-  if(head==NULL){
-    head = tS;
-    return;
-    cout<<"its working"<<endl;
-  }
   /*if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
       head = tS;
