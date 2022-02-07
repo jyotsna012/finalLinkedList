@@ -119,8 +119,6 @@ void ADD(char *firstN, char *lastN, int IID, float GP, Node* &head){
 
 void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
 	
-  cout<<"its working aa"<<endl;
-
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
       head = tS;
@@ -128,7 +126,6 @@ void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
   }
   
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
-      cout<<"its working aaggggdfff"<<endl;
     previous->setNext(tS);
     tS->setNext(cN);
     return;
@@ -140,7 +137,6 @@ void SORT(Node* &tS, Node* &cN, Node* &head, Node* &previous){
    }
 	
   else{
-      cout<<"its working move"<<endl;
     previous = cN;
     Node* nextNode = cN->getNext();
     SORT(tS,nextNode, head, previous);
