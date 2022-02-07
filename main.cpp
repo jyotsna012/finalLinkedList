@@ -115,6 +115,7 @@ void SORT(Node* &tS, Node* &cN, Node* head){
   if(head==NULL){
     head = tS;
     return;
+    cout<<"its working"<<endl;
   }
   /*if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
