@@ -120,26 +120,29 @@ void SORT(Node* &tS, Node* &cN, Node* &head){
 	
   cout<<"its working aa"<<endl;
   Node* previous = NULL;
+  Node* nextNode = NULL;
 
   if(tS->getStudent()->getID() < cN->getStudent()->getID() && head==cN){
       tS->setNext(cN);
       head = tS;
       return;
   }
-    /*else if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
+  
+  if(tS->getStudent()->getID() < cN->getStudent()->getID() && head != cN){
     previous->setNext(tS);
     tS->setNext(cN);
     return;
   }
+
+ if(cN->getNext()==NULL){
+	cN->setNext(tS); 
+	return;
+   }
+	
   else{
     previous = cN;
-    Node* nextNode = cN->getNext();
-	  if(cN->getNext()==NULL){
-		cN->setNext(tS); 
-		return;
-	  }
+    nextNode = cN->getNext();
     sort(tS,nextNode, head);*/
-  
 }
 
 
